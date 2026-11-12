@@ -15,10 +15,15 @@ class KendaraanDinasTable
     {
         return $table
             ->columns([
-                TextColumn::make('perangkatDaerah.id')
-                    ->searchable(),
-                TextColumn::make('pegawai.id')
-                    ->searchable(),
+                TextColumn::make('perangkatDaerah.nama_instansi')
+                    ->label('Perangkat Daerah')
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('pegawai.nama_pegawai')
+                    ->label('Pegawai Penanggung Jawab')
+                    ->searchable()
+                    ->sortable(),
                 TextColumn::make('nomor_polisi')
                     ->searchable(),
                 TextColumn::make('merk_kendaraan')

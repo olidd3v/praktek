@@ -22,7 +22,12 @@ class PerangkatDaerahResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'Perangkat Daerah';
+    protected static ?string $navigationLabel = 'Perangkat Daerah';
+
+    protected static ?string $modelLabel = 'Perangkat Daerah';
+
+    protected static ?string $pluralModelLabel = 'Perangkat Daerah';
+    
 
     public static function canViewAny(): bool
     {

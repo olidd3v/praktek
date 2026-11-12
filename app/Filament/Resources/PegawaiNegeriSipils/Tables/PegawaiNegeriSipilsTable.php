@@ -15,8 +15,10 @@ class PegawaiNegeriSipilsTable
     {
         return $table
             ->columns([
-                TextColumn::make('perangkatDaerah.id')
-                    ->searchable(),
+                TextColumn::make('perangkatDaerah.nama_instansi')
+                    ->label('Perangkat Daerah')
+                    ->searchable()
+                    ->sortable(),
                 TextColumn::make('nama_pegawai')
                     ->searchable(),
                 TextColumn::make('nip')

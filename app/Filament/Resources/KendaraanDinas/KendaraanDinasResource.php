@@ -24,6 +24,12 @@ class KendaraanDinasResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'Kendaraan Dinas';
 
+    protected static ?string $navigationLabel = 'Kendaraan Dinas';
+
+    protected static ?string $modelLabel = 'Kendaraan Dinas';
+
+    protected static ?string $pluralModelLabel = 'Kendaraan Dinas';
+
     public static function canViewAny(): bool
     {
         return auth()->user()->can('kendaraan_dinas.view');

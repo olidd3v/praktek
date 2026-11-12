@@ -24,6 +24,12 @@ class PegawaiNegeriSipilResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'Pegawai Negeri Sipil';
 
+    protected static ?string $navigationLabel = 'Pegawai Negeri Sipil';
+
+    protected static ?string $modelLabel = 'Pegawai Negeri Sipil';
+
+    protected static ?string $pluralModelLabel = 'Pegawai Negeri Sipil';
+
     public static function canViewAny(): bool
     {
         return auth()->user()->can('pegawai_negeri_sipil.view');
