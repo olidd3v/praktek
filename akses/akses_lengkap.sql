@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 12, 2026 at 05:28 AM
+-- Generation Time: Nov 13, 2026 at 12:28 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.30
 
@@ -16,6 +16,10 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `vraktek`
+--
 
 -- --------------------------------------------------------
 
@@ -76,7 +80,19 @@ INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at
 (37, 'users.view', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
 (38, 'users.create', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
 (39, 'users.edit', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
-(40, 'users.delete', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42');
+(40, 'users.delete', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(61, 'kendaraan_dinas.view', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(62, 'kendaraan_dinas.create', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(63, 'kendaraan_dinas.edit', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(64, 'kendaraan_dinas.delete', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(65, 'perangkat_daerah.view', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(66, 'perangkat_daerah.create', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(67, 'perangkat_daerah.edit', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(68, 'perangkat_daerah.delete', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(69, 'pegawai_negeri_sipil.view', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(70, 'pegawai_negeri_sipil.create', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(71, 'pegawai_negeri_sipil.edit', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42'),
+(72, 'pegawai_negeri_sipil.delete', 'web', '2026-06-14 03:02:42', '2026-06-14 03:02:42');
 
 -- --------------------------------------------------------
 
@@ -123,7 +139,19 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (37, 4),
 (38, 4),
 (39, 4),
-(40, 4);
+(40, 4),
+(61, 4),
+(62, 4),
+(63, 4),
+(64, 4),
+(65, 4),
+(66, 4),
+(67, 4),
+(68, 4),
+(69, 4),
+(70, 4),
+(71, 4),
+(72, 4);
 
 --
 -- Indexes for dumped tables
@@ -172,7 +200,7 @@ ALTER TABLE `role_has_permissions`
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `roles`

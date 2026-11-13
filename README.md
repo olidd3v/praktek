@@ -1,8 +1,16 @@
 ## NOTE 
 
-install composer dulu 
+Web app ini menggunakan laravel 13, php 8.3, fillament 5, spatie permission 8.0 untuk permission role akses.
 
-composer update
+untuk demo ujian praktik ini saya berinisiatif untuk upload ke server hosting pribadi untuk meninjau langsung / demo web app yang sudah saya buat.
+
+link Demo : https://praktek-pusdatin.olid.dev/
+
+## START
+
+install/update composer dulu 
+
+run command : composer update
 
 kalau ada masalah di compiler atau pada saat setelah composer update selesai jalankan ini
 
@@ -18,10 +26,10 @@ mkdir storage\app\private
 mkdir storage\logs
 mkdir bootstrap\cache
 
-
 ubah .env nya sesuaikan konfigurasinya
 
 ketik command .env.example
+cp .env.example .env
 
 ubah setingannya
 
@@ -36,27 +44,23 @@ run command : php artisan key:generate
 
 buat database baru dengan nama vraktek (bebas sesuaikan)
 
-setelah di migrate semua import akses/akses.sql ke database supaya admin memiliki akses awal yang terintegrasi
+run command : php artisan migrate:fresh --seed
+
+setelah di migrate semua, lalu import akses/akses_lengkap.sql ke database supaya admin memiliki akses awal yang terintegrasi
 
 buka aplikasinya php artisan serve --port=8001 (bebas portnya tergantung biasanya / kebutuhannya)
 
 lalu login dengan user bawaan email : test@example, password: password
 
-setelah login masuk ke menu role untuk manajemen akses, dan menu users untuk manajemen user
-
-nah disini input aksesnya manual ke database ini dilakukan supaya tidak sembarang orang bisa langsung pakai aplikasi jika mereka punya source code
-
-setelah akses di input atau lebih simplenya import saja akses/akses_lengkap.sql
+setelah login, masuk ke menu role untuk manajemen akses, dan menu users untuk manajemen user
 
 lalu di menu roles pilih permission sesuai akses yang ingin diberikan
 
-kalua menu di halaman tidak keluar setelah diberikan akses
+kalau menu di halaman tidak keluar setelah diberikan akses
 
-run command ini : 
+run command : php artisan optimize:clear
 
-php artisan optimize:clear
-
- karna waktunya terbatas untuk db bisa import aja pakai akses/final.sql
+karna waktunya terbatas untuk db bisa import lanjut aja pakai akses/vraktek.sql
 
 ## END NOTE
 
