@@ -1,6 +1,6 @@
 ## NOTE 
 
-Web app ini menggunakan laravel 13, php 8.3, fillament 5, spatie permission 8.0 untuk permission role akses.
+Web app ini menggunakan laravel 13, php 8.3, MySQL fillament 5, spatie permission 8.0 untuk permission role akses.
 
 untuk demo ujian praktik ini saya berinisiatif untuk upload ke server hosting pribadi untuk meninjau langsung / demo web app yang sudah saya buat.
 
